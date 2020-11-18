@@ -1,0 +1,77 @@
+*{
+    /*aplica para tudo*/
+margin: 0;
+/* magem de todos os objetos do site, em cima, baixo, direita, esquerda*/
+font-family: arial;
+/*fonte para todo o site, pode colocar quantas necessárias, pois a pessoa tem que ter as fontes para usá-la*/
+color: white;
+/*cor branco em todo site*/
+}
+
+body{
+    /*conteudo do site*/
+    background: url(../images/fundo.jpg);
+    /*fundo, colocamos uma imagem
+    ../serve para indicar que esta saindo da pasta atual e ir para a pasta de cima, ou seja, a pasta da imagem não é a mesma do estilo.css.
+    caso eu quisesse duas eu colocaria ../../*/
+    background-size: cover;
+    /*tamanho do background, ou seja, do fundo, no caso tamanho da imagem em relação ao site*/
+    text-align: center;
+    /*texto do site alinhado*/
+
+}
+
+.conteudo-principal{
+    height: 100vh;
+    /*altura
+    px: pixel
+    %
+    vh: altura tamanho da tela do aparelho
+    vw:largura tamanho da tela do aparelho
+    cover: encaixa na tela
+    contain:*/
+    background: rgba(0,0,0,0.5);
+    /*cor de fundo, com um parâmetro extra: que é a transparência*/
+    padding-top:10%;
+    /*espaço pra dentro, ou seja, espaço entre elementos*/
+}
+
+.titulo{
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*tamanho da fonte
+    magin-top: 20px - margem acima do titulo
+    margin-bottom - magrgem abaixo do titulo*/
+}
+
+.data-inicio{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 30px;
+
+}
+
+.destaque{
+    background: white;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    /*é a decoração (sublinhado) do texto, no caso do none ele retira o sublinhado*/
+    border: 1px solid white;
+    /*é a borda, o tamanho da borda, tipo da borda, cor da borda*/
+    padding: 10px 10px;
+}
+
+a:hover{
+    /*pseudoseletor*/
+    color:black;
+    /*troca a cor das letras de branco para preto quando o mouse fica e cima do SAIBA MAIS*/
+    background:white;
+    /*troca o fundo de transparente para branco*/
+}
+.subtitulo{
+    font-weight: bold;
+}
